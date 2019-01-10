@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 
-import javax.annotation.PostConstruct;
 
 @Configuration
 @PropertySource("classpath:application.properties")
@@ -19,7 +18,7 @@ public class RepositoryConfig {
     @Bean
     public OrderRepository orderRepository() {
         OrderMapRepository orderRepository = new OrderMapRepository();
-        orderRepository.setSequence(Long.parseLong(this.environment.getProperty("intitialSequence")));
+        orderRepository.setSequence(Long.parseLong(environment.getProperty("intitialSequence")));
         return orderRepository;
     }
 

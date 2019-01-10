@@ -24,7 +24,8 @@ public class SellerInitializer {
     /**
      * The seller names.
      */
-    @Value("#{sellerNamesMap}")
+    //@Value("#{sellerNamesMap}")
+    @Autowired
     private Map<Long, String> sellerNames = Collections.emptyMap();
 
     /**

@@ -1,11 +1,11 @@
 package org.shop.configuration;
 
+import org.aspectj.lang.annotation.Around;
 import org.shop.api.*;
 import org.shop.api.impl.*;
 import org.shop.repository.ItemRepository;
 import org.shop.repository.ProductRepository;
 import org.shop.repository.ProposalRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

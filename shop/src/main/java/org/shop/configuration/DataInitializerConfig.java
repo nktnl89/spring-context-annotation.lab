@@ -32,7 +32,7 @@ public class DataInitializerConfig {
         return new UserInitializer(userService);
     }
 
-    @Bean(name = "sellerNamesMap")
+    @Bean//(name = "sellerNamesMap")
     public Map<Long, String> sellerNamesMap() {
         Map<Long, String> map = new HashMap<>();
         map.put(1L, Sellers.AMAZON);
